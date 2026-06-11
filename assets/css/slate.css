@@ -768,7 +768,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
     box-shadow: var(--shadow-lg);
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     background: transparent;
-    border: 8px solid var(--color-paper);
+    border: 8px solid #3a3a3a;
 }
 
 .about-img:hover { transform: translateY(-8px) scale(1.02); }
@@ -826,7 +826,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
     bottom: 14px;
     padding: 6px 12px;
     border-radius: 0;
-    background: transparent;
+    background: rgba(30, 30, 30, 0.85);
     backdrop-filter: blur(8px);
     color: #fff;
     font-size: 0.78rem;
@@ -902,7 +902,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .about-text {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: var(--color-text-light);
+    color: #d0d0d0;
     margin-bottom: 16px;
 }
 
