@@ -17,10 +17,10 @@
     --color-green-light: #FF1A1A;
     --color-gold: #FF0000;
     --color-swiss-red: #FF0000;
-    --color-ink: #FFFFFF;
-    --color-ink-soft: #CCCCCC;
-    --color-text: #FFFFFF;
-    --color-text-light: #999999;
+    --color-ink: #F0F0F0;
+    --color-ink-soft: #D8D8D8;
+    --color-text: #F0F0F0;
+    --color-text-light: #B8B8B8;
     --color-text-inverse: #000000;
     --color-border: #5e5e5e;
     --color-rule: rgba(255, 255, 255, 0.12);
