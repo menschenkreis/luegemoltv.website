@@ -1,18 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
-  <filter id="noise">
-    <feTurbulence type="fractalNoise" baseFrequency="0.032" numOctaves="6" stitchTiles="stitch" result="noise"/>
-    <feDiffuseLighting in="noise" lighting-color="#8a8a8a" surfaceScale="2.5" result="lit">
-      <feDistantLight azimuth="225" elevation="55"/>
-    </feDiffuseLighting>
-    <feColorMatrix type="saturate" values="0" result="gray"/>
-    <feBlend in="gray" in2="SourceGraphic" mode="multiply"/>
-  </filter>
-  <rect width="400" height="400" fill="#3a3a3a" filter="url(#noise)"/>
-  <!-- Subtle horizontal slate layers -->
-  <line x1="0" y1="45" x2="400" y2="48" stroke="#333" stroke-width="0.5" opacity="0.3"/>
-  <line x1="0" y1="110" x2="400" y2="108" stroke="#444" stroke-width="0.4" opacity="0.25"/>
-  <line x1="0" y1="175" x2="400" y2="178" stroke="#333" stroke-width="0.5" opacity="0.3"/>
-  <line x1="0" y1="230" x2="400" y2="227" stroke="#444" stroke-width="0.3" opacity="0.2"/>
-  <line x1="0" y1="295" x2="400" y2="298" stroke="#333" stroke-width="0.5" opacity="0.25"/>
-  <line x1="0" y1="355" x2="400" y2="352" stroke="#444" stroke-width="0.4" opacity="0.2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600">
+  <defs>
+    <filter id="slate" x="0" y="0" width="600" height="600">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="8" stitchTiles="stitch" result="noise"/>
+      <feDiffuseLighting in="noise" lighting-color="#999" surfaceScale="4" result="lit">
+        <feDistantLight azimuth="235" elevation="50"/>
+      </feDiffuseLighting>
+      <feColorMatrix in="lit" type="saturate" values="0" result="gray"/>
+      <feComponentTransfer in="gray" result="darken">
+        <feFuncR type="linear" slope="0.15" intercept="0.18"/>
+        <feFuncG type="linear" slope="0.15" intercept="0.18"/>
+        <feFuncB type="linear" slope="0.15" intercept="0.18"/>
+      </feComponentTransfer>
+      <feBlend in="darken" in2="SourceGraphic" mode="multiply"/>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="#3a3a3a" filter="url(#slate)"/>
+  <!-- Horizontal slate layer lines -->
+  <g opacity="0.18" stroke="#2a2a2a" fill="none">
+    <path d="M0,42 Q150,44 300,40 T600,43" stroke-width="1.2"/>
+    <path d="M0,95 Q200,98 400,93 T600,96" stroke-width="0.8"/>
+    <path d="M0,158 Q100,155 300,160 T600,157" stroke-width="1.0"/>
+    <path d="M0,215 Q250,218 500,213 T600,216" stroke-width="0.6"/>
+    <path d="M0,278 Q180,275 360,280 T600,277" stroke-width="1.1"/>
+    <path d="M0,338 Q220,341 440,336 T600,339" stroke-width="0.7"/>
+    <path d="M0,402 Q160,399 320,404 T600,401" stroke-width="0.9"/>
+    <path d="M0,462 Q280,465 560,460 T600,463" stroke-width="1.0"/>
+    <path d="M0,520 Q140,517 280,522 T600,519" stroke-width="0.8"/>
+    <path d="M0,572 Q200,575 400,570 T600,573" stroke-width="1.1"/>
+  </g>
 </svg>
