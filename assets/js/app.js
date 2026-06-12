@@ -5,6 +5,7 @@
 
 // Video data – hardcoded from YouTube channel
 const VIDEOS = [
+    // --- 5 Neueste Videos ---
     {
         id: "qmbKNVlmZz8",
         title: "Alpaufzug im Val d'Hérens – Wenn Eringerkühe auf die Alpage d'Arbey ziehen",
@@ -40,14 +41,42 @@ const VIDEOS = [
         category: "brauchtum",
         desc: "Die wilden Tschäggättä im Lötschental – ein Brauchtum, das trotz Bergsturz weiterlebt."
     },
+    // --- 5 Meistangesehene Videos ---
     {
-        id: "Oj4yprTeqyI",
-        title: "Altsilvesterchlausen Waldstatt 2026 – Appenzeller Brauchtum live erleben",
-        duration: "7:22",
-        category: "brauchtum",
-        desc: "Altsilvesterchlausen in Waldstatt 2026 – Appenzeller Brauchtum zum Anfassen."
+        id: "Qmi6_tt-a4M",
+        title: "Alpabzug Engstligenalp 2025 – 68.500+ Aufrufe",
+        duration: "7:28",
+        category: "alp",
+        desc: "Der wunderschöne Alpabzug auf der Engstligenalp 2025 – das meistgesehene LuegemolTV-Video."
     },
-
+    {
+        id: "G0oUDRckGf4",
+        title: "Alpaufzug Engstligenalp 2025 – 33.800+ Aufrufe",
+        duration: "",
+        category: "alp",
+        desc: "Der Alpaufzug auf die Engstligenalp 2025 – über 33.000 Mal angesehen."
+    },
+    {
+        id: "tS9PWTHDc_A",
+        title: "Alpabzug Flimserstein 2025 – 22.000+ Aufrufe",
+        duration: "12:45",
+        category: "alp",
+        desc: "Der farbenfrohe Alpabzug am Flimserstein 2025 – ein Publikumsmagnet."
+    },
+    {
+        id: "yXaxwHGVgaY",
+        title: "Chästeilet Justistal 2025 – 20.000+ Aufrufe",
+        duration: "7:46",
+        category: "brauchtum",
+        desc: "Der traditionelle Chästeilet im wunderschönen Justistal – über 20.000 Aufrufe."
+    },
+    {
+        id: "XfpmrERRD68",
+        title: "Bodäfahrt 2025 – 14.700+ Aufrufe",
+        duration: "",
+        category: "brauchtum",
+        desc: "Die Bodäfahrt 2025 – ein schweizweit einzigartiges Erlebnis mit über 14.000 Aufrufen."
+    }
 ];
 
 const CATEGORY_LABELS = {
