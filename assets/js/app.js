@@ -245,12 +245,14 @@ function initNavbar() {
 
     toggle.addEventListener("click", () => {
         links.classList.toggle("open");
+        toggle.classList.toggle("active");
     });
 
     // Close mobile menu on link click
     links.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", () => {
             links.classList.remove("open");
+            toggle.classList.remove("active");
         });
     });
 }
