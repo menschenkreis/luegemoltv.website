@@ -757,7 +757,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 
 .about-image-stack {
     position: relative;
-    height: 560px;
+    height: 620px;
     z-index: 1;
 }
 
@@ -797,9 +797,19 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
     z-index: 1;
 }
 
+.about-img-4 {
+    bottom: 48px;
+    right: 0;
+    width: 38%;
+    height: 220px;
+    z-index: 2;
+}
+
+.about-img-3 img { object-position: center center; }
+.about-img-4 img { object-position: center center; }
+
 .about-img-1 img { object-position: 58% center; }
 .about-img-2 img { object-position: 64% center; }
-.about-img-3 img { object-position: center 62%; }
 
 .img-placeholder {
     width: 100%;
@@ -1796,7 +1806,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
     }
 
     .about-image-stack {
-        height: 480px;
+        height: 540px;
     }
 
     .about-stats {
@@ -1838,6 +1848,13 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
         left: 9%;
         width: 52%;
         height: 230px;
+    }
+
+    .about-img-4 {
+        bottom: 24px;
+        right: 4px;
+        width: 44%;
+        height: 180px;
     }
 
     .feature-icon {
